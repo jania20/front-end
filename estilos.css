@@ -538,3 +538,71 @@ header div {
         margin-bottom: 2rem;
     }
 }
+
+
+/*----------- estilo para el metodo hamburguesa ----------- */
+
+/* Menú hamburguesa */
+
+.menu-hamburguesa {
+    display: none; 
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.barra {
+    height: 4px;
+    width: 30px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+   
+    .header-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 150px; 
+        position: absolute;
+        top: 70px;
+        right: 0; 
+        background-color: #f2f2f2;
+        text-align: center;
+        padding-top: 20px;
+        border: 1px solid #ccc; 
+        border-radius: 5px;
+    }
+
+    
+    .menu.activo {
+        display: flex;
+    }
+
+   
+    .menu a {
+        color: black;
+        font-size: 16px; 
+        padding: 10px;
+        text-decoration: none;
+        display: block; 
+    }
+
+    .menu a:hover {
+        color: rgb(3, 3, 64);
+        opacity: 1;
+    }
+}
