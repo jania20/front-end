@@ -513,3 +513,28 @@ header div {
     color: gray;
     padding-top: 10px;
 }
+
+/*---------------- RESPONSIVE -------------------- */
+
+@media (max-width: 1200px) {
+    .header-right {
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 15vw;
+    }
+
+    .menu {
+        gap: 1.5rem;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .technology {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
