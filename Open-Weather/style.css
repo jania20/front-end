@@ -1,0 +1,96 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0939bf8d;
+    margin: 0;
+    padding: 20px;
+    color: #5a4e6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    background: rgba(224, 227, 229, 0.912);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid black;
+}
+
+h1 {
+    color: #8a6cff;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.btn-buscar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #e6e6ff;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+input:focus {
+    border-color: #8a6cff;
+    outline: none;
+}
+
+button {
+    background: #8a6cff;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6a4bff;
+    opacity: 70%;
+    text-decoration: underline;
+}
+
+.resultado {
+    background: #faf9ff;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 100px;
+}
+
+.inicial {
+    text-align: center;
+    color: #a5a3b8;
+    font-style: italic;
+}
+
+.ciudad {
+    color: #5a4e6b;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.datos-clima p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.error {
+    color: #ff6b6b;
+    text-align: center;
+    font-weight: 600;
+}
