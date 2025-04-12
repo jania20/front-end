@@ -1,0 +1,84 @@
+
+
+#contenedor-promesa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #0a1e2fb0;
+    padding: 20px;
+}
+
+.cont-agregar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-agregar button {
+    font-size: 15px;
+    border: 2px solid #a7b0a403;
+    border-radius: 10px;
+    padding: 8px 20px;
+    background-color: #b2beaead;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cont-agregar button:hover {
+    opacity: 70%;
+    text-decoration: underline;
+    background-color:  #43603a;
+}
+
+.label-ingrediente {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0a090b;
+    margin-bottom: 10px;
+}
+
+#ingrediente {
+    padding: 8px 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+#hamburguesa-final {
+    border: 2px solid #5d3d8b;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff2cc;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
+
+#mensaje-temporal {
+    height: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+#mensaje-temporal.error {
+    color: #260c0c;
+    visibility: visible;
+}
+
+#mensaje-temporal.success {
+    color: #09130a;
+    visibility: visible;
+}
