@@ -1,0 +1,608 @@
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ------------------------------------- Para el header right----------------------------------------------------------*/
+.header-right{
+    background: rgb(242, 240, 240); 
+    display: flex;
+    justify-content: flex-end;
+    gap:5px;
+    padding: 15px;
+    height: 5px;
+}
+/* Para el espacio entre icono y enlace*/
+.header-right a i {
+    margin-right: 5px;
+}
+/*Para darle cierto estilo a los enlaces*/
+.header-right a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    opacity: 20; /* Hace el enlace transparente */
+    transition: opacity 0.3s ease-in-out; /* Transición suave */
+    margin-left: 30px;
+    /*display: flex;
+    align-items: center;*/
+}
+/*Le agrega cierto estilo cuando se da click a los enlaces para saber que se estan seleccionando*/
+.header-right a:hover {
+    text-decoration: underline;
+    opacity: 1; /* Hace el enlace visible al pasar el cursor */
+    color: rgb(23, 23, 116);
+}
+
+/*------------------------------ Para logo cisco y menu (lado izquierdo) -----------------------------------------------------*/
+
+header div {
+    height: 70px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo con el menú */
+    padding-left: 60px;
+    /* border: solid black;*/
+    gap: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 10;
+    transition: opacity 0.3 ease-in-out;
+}
+
+.menu a {
+    text-decoration: none;
+    display: flex;
+    color: black;
+    font-size: 15px;
+    opacity: 20;
+    
+}
+.menu a:hover {
+    text-decoration: underline;
+    opacity: .6;
+    color:rgb(3, 3, 64);
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+}
+/*------------------------------ Menu (lado derecho) -----------------------------------------------------*/
+
+.trials{
+    border: solid rgb(4, 4, 68);
+    border-radius: 20px;
+    margin-left: 680px;
+    color: rgb(1, 1, 63);
+    padding: 5px 15px;     
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    
+}
+/*----------------------------------------- MAIN SECCION 1 ---------------------------------------------------*/
+.seccion1 {
+    background-color: rgb(242, 240, 240);
+    padding: 20px 0;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+/*logo cisco live y */
+.ds1 {
+    gap: 10px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   /* padding-left: 480px */
+}
+
+.ciscolive{
+    height: 50px;
+    width: auto;
+}
+
+.event {
+    font-size: 14px;
+    color: black;
+   /* display: flex;
+    align-items: center;
+    padding-left: 30px;
+    gap: 10px; */ 
+}
+
+.register {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s;
+    /*
+    opacity: 20;
+    display: flex;
+    text-decoration: none;
+    color: blue;*/
+}
+
+.register:hover{
+    text-decoration: underline;
+    color: darkblue;
+    opacity: 20;
+}
+ /*Fondo azul*/
+ /*
+ .fondoazul{
+    background-image: url(C:/Users/980020889/OneDrive/Escritorio/Septimo/azul.JPG);
+    width: 100vw;
+    height: 300px;
+    border: solid black; 
+ }
+
+ .fondoazul p {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 1;
+   pC;
+ }
+
+ .logos1 {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-content: center;
+ }
+
+*/
+.fondo {
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 50px;
+
+   /* width: 100%;
+    height: 300px;
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between; 1
+    padding: 0 50px; */
+}
+
+.fondo p {
+    margin-left: 350px;
+   /* margin-left: 200px;
+    font-size: 50px;
+    color: white;
+    margin: 0; */
+}
+
+.logos1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 400px;
+    /*
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+     */
+}
+
+.logos1 img {
+    height: 130px;
+    width: auto;
+}
+
+/* parte inferior del background seccion  1 */
+.links {
+    background-color: rgb(242, 240, 240); 
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    padding: 20px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: blue;
+    text-decoration: underline;
+} 
+
+/*---------------------------- Second section ----------------------*/
+.hs2{
+    font-size: 40px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.tarjetas {
+    padding: 20px 20px;
+    height: 400px;
+    width:100%;
+    
+    justify-content: center;
+    /*padding: 20px 20px;*/
+    display: flex;
+    gap: 80px;
+}
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.technology p {
+    line-height: 1.4; 
+    text-align: justify; 
+    width: 400px; 
+    margin-top: 10px; 
+}
+
+.technology .headers2 {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+
+.router, .aidefense, .hyperfabric {
+    height: 150px;
+    width: 250px;
+}
+
+/*------------------ SECCION OUR TECHNOLOGY -----------------*/
+.technology-section {
+    background: rgb(242, 240, 240);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulo-tech {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.tarjetas-tech {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 tarjetas por fila */
+    gap: 20px; 
+    justify-items: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.imagen-tarjeta {
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+}
+
+.imagen-tarjeta a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.imagen-tarjeta img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.imagen-tarjeta p {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0;
+    background-color: #f4f4f4;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+}
+
+.imagen-tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+/*------------------ secure section --------------------- */
+.seccion-security {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px; 
+    margin-top: 50px; 
+}
+
+.texto-secure {
+    width: 50%;
+    text-align: left;
+}
+
+.texto-secure h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.texto-secure p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.imagen-escurity {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+
+
+/*------------------ intelligent section ---------------*/
+.seccion-ai {
+    display: flex;
+    align-items: center;
+    gap: 150px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 80px;
+    
+}
+
+.imagen-ai {
+    width: 50%; 
+    max-width: 600px; 
+    border-radius: 10px; 
+}
+
+.texto-ai {
+    width: 50%; 
+    text-align: left;
+}
+
+.texto-ai h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.texto-ai p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/*----------info secundaria -------------*/
+.info-inferior {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.h-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.links-inferior {
+    display: flex;
+    gap: 20px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.elementos {
+    text-align: center;
+    padding: 5px;
+}
+
+.elementos h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.elementos p {
+    margin-bottom: 5px;
+}
+
+.elementos a {
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.elementos a:hover {
+    text-decoration: underline;
+}
+
+
+/*------------- seccion footer ---------------- */
+.footer {
+    background-color:rgb(242, 240, 240);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-t {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociales img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-m {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.footer-m a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* copyright */
+.footer-abajo{
+    font-size: 12px;
+    color: gray;
+    padding-top: 10px;
+}
+
+/*---------------- RESPONSIVE -------------------- */
+
+@media (max-width: 1200px) {
+    .header-right {
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 15vw;
+    }
+
+    .menu {
+        gap: 1.5rem;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .technology {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/*----------- estilo para el metodo hamburguesa ----------- */
+
+/* Menú hamburguesa */
+
+.menu-hamburguesa {
+    display: none; 
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.barra {
+    height: 4px;
+    width: 30px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+   
+    .header-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 150px; 
+        position: absolute;
+        top: 70px;
+        right: 0; 
+        background-color: #f2f2f2;
+        text-align: center;
+        padding-top: 20px;
+        border: 1px solid #ccc; 
+        border-radius: 5px;
+    }
+
+    
+    .menu.activo {
+        display: flex;
+    }
+
+   
+    .menu a {
+        color: black;
+        font-size: 16px; 
+        padding: 10px;
+        text-decoration: none;
+        display: block; 
+    }
+
+    .menu a:hover {
+        color: rgb(3, 3, 64);
+        opacity: 1;
+    }
+}

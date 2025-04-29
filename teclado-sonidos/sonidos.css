@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+.seccion-sonidos{
+    font-size: 40px;
+    color: rgb(235, 235, 244);
+}
+
+section{
+    height: 100vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor{
+    display: flex;
+    gap:30px;
+}
+
+.tecla{
+    background-color: rgba(137, 43, 226, 0.192);
+    color: white;
+    font-size: 25px;
+    border: 2px solid rgb(129, 125, 125);
+    padding: 25px;
+    cursor: pointer;
+}
