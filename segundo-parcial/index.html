@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Seccion principal -->
+
+    <section class="seccion-principal">
+        <!-- Contenedor para anadir la palabra fitness y el boton para iniciar sesion -->
+        <div class="contenedor-fit">
+        <label class="fit-label"><span class="texto-negrito">Fit</span>ness</label>
+        </div>
+        <div class="contenedor-login">
+            <button class="log-in">Iniciar sesion</button>
+        </div>
+        <!-- Contenedor para agregar contenedor para acceso spotify -->
+        <div class="contenedor-spoti">
+            <iframe src="https://open.spotify.com/embed/track/7iQMm50NNwlUIRWhONZR2k?si=69b7e617fbb44836" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        </div>
+    </section>
+    <!-- Seccion para agregar las tarjetas -->
+    <section class="seccion-tarjetas" >
+        <!-- PARA ACOMODAR LAS PIRMERAS TRES TARJETAS-->
+        <div class="primeras-tarjetas">
+            <!-- Tarjeta soccer -->
+            <article class="contenedor-soccer" data-id="soccer" id="img-soccer">
+                    <div class="imagen-soccer">
+                    <img src="./imagenes/canotaje.jpeg" alt="futbol">
+                    </div>
+                    <div class="contenido-soccer">
+                        <h3 class="noventa">90 min</h3>
+                        <p>Canotaje - kayak <br>2 o 4 personas</p>
+                    </div>
+            </article>
+            
+
+            <!-- Tarjeta de tenis -->
+            <article class="contenedor-tenis" data-id="tenis" id="tarjeta-tenis">
+                <div><img class="imagen-tenis" src="./imagenes/vela.jpeg"></div>
+                <div class="contenido-tenis">
+                    <h3 class="noventa">90 min</h3>
+                    <p>Vela - optimist<br/>Individual</p>
+                </div> 
+            </article>
+            <!-- Tarjeta en el que aparece un chavo pateando el balon s-->
+            <article class="cont-patadasoccer" data-id="patear-balon" id="tarjeta-pateando" >
+                <div >
+                    <img src="./imagenes/Gignac.jpg">
+                </div>
+            </article>
+        </div>
+        
+
+        <!-- PARA ACOMODAR LASA SEGUNDAS TARJETAS-->
+         <div class="segundas-fotos" >
+                <!-- Tarjeta pilates -->
+                <article class="contenedor-pilates" data-id="pilates" id="pilates">
+                    <div class="imagen-pilates"><img src="./imagenes/ciclismo.jpeg"></div>
+                    <div class="contenido-pilates">
+                        <h3 class="noventa">60 min</h3>
+                        <p>Ciclismo - Enbiciando, Santiago. NL</p>
+                </article>
+                
+
+                <!-- Tarjeta ejercicio -->
+                <article class="contenedor-ejercicio" data-id="ejercicio" id="ejercicio">
+                    <div><img  src="./imagenes/ovalle.jpeg" alt="imagen ejercicio" ></div>
+                    <div class="contenido-ejercicio">
+                        <h3 class="noventa">40 min</h3>
+                        <p>Aprender a patear <br/> Rutinas individuales y en equipo</p>
+                    </div>
+
+                </article>
+                <!-- Tarjeta chica caminando -->
+                <article class="tarjeta-caminar" data-id="caminar" id="caminata">
+                    <img src="./imagenes/gym.jpeg">
+
+                   
+                </article>
+            </div>
+    </section >
+     <!-- codigo que se muestra en el responsive-->
+     <div class="cont-ocultowalk">
+        <button class="cerrar">X</button>
+    </div>
+        
+    <script src="script.js" defer></script>
+</body>
+</html>
+
