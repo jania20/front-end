@@ -1,0 +1,253 @@
+
+
+/* Estilo contenedor página de inicio */
+.mi-pagina-principal { 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(180deg, rgba(255, 250, 205, 0.3) 0%, #ffffff 100%);
+    padding-bottom: 40px;
+    min-height: calc(100vh - 100px); 
+    position: relative;
+    z-index: 1;
+}
+
+/* pag prinipal*/
+.seccion-bienvenida-kayak { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 60px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo texto */
+.texto-central-bienvenida { 
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+
+.texto-central-bienvenida h1 {
+    font-size: 4em;
+    color: #FFD700 !important; /*Estaba teniendo problemas para que se cambiara el color, so por eso puse important*/
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 5 !important;
+    position: relative !important;
+}
+
+.texto-central-bienvenida p {
+    font-size: 1.3em;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los botones del Hero */
+.botones-principal { 
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*Boton ver mas */
+.boton-explorar-snacks { /* Antes: ver-mas-btn */
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    background-color: #001F3F !important; 
+    color: white !important; 
+    border: 2px solid #001F3F !important; 
+}
+
+.boton-explorar-snacks:hover {
+    background-color: #003366 !important; 
+    border-color: #003366 !important; 
+}
+
+/* Contenedor para las imágenes*/
+.contenedor-fotos-snacks { 
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 350px;
+    z-index: 3;
+}
+
+/* rectangulo detras de las fotos */
+.fondo-decorativo-amarillo { 
+    position: absolute;
+    background-color: rgba(255, 255, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.snack-principal-imagen { 
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.snack-secundario-imagen {
+    position: absolute;
+    width: 40%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    bottom: -20px;
+    right: -20px;
+    z-index: 2;
+    border: 3px solid white;
+}
+
+/* Sección Sobre Nosotros */
+/*se va a cambiar esto */
+.seccion-conocenos {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 960px;
+    margin: 40px auto 0;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+}
+
+.seccion-conocenos h2 {
+    font-size: 3em;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.seccion-conocenos p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Media Queries  */
+@media (max-width: 992px) {
+    .texto-central-bienvenida h1 {
+        font-size: 3em;
+    }
+    .texto-central-bienvenida p { 
+        font-size: 1.2em;
+    }
+    .botones-hero-principal {
+        flex-direction: row;
+    }
+    .boton-explorar-snacks {
+        padding: 14px 28px;
+        font-size: 1em;
+    }
+    .snack-principal-imagen {
+        max-width: 90%;
+    }
+    .fondo-decorativo-amarillo {
+        width: 95%;
+        height: 105%;
+        transform: translate(-50%, -50%) rotate(-3deg);
+    }
+    .snack-secundario-imagen {
+        width: 45%;
+        height: 130px;
+        bottom: -15px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-bienvenida-kayak {
+        flex-direction: column;
+        text-align: center;
+    }
+    .texto-central-bienvenida {
+        text-align: center;
+    }
+    .botones-hero-principal { 
+        flex-direction: column;
+        gap: 15px;
+    }
+    .boton-explorar-snacks { 
+        width: 80%;
+        margin-right: 0;
+    }
+    .contenedor-fotos-snacks {
+        padding: 0;
+        max-width: 90%;
+        margin-top: 30px;
+    }
+    .snack-principal-imagen { 
+        width: 100%;
+    }
+    .fondo-decorativo-amarillo { 
+        width: 100%;
+        height: 110%;
+        transform: translate(-50%, -50%) rotate(-2deg);
+    }
+    .snack-secundario-imagen {
+        width: 40%;
+        height: 110px;
+        bottom: -10px;
+        right: -10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .texto-central-bienvenida h1 {
+        font-size: 2.5em;
+    }
+    .texto-central-bienvenida p { 
+        font-size: 1em;
+    }
+    .boton-explorar-snacks {
+        width: 95%;
+        padding: 12px 24px;
+        font-size: 0.9em;
+    }
+    .snack-principal-imagen { 
+        width: 100%;
+    }
+    .fondo-decorativo-amarillo { 
+        width: 100%;
+        height: 115%;
+        transform: translate(-50%, -50%) rotate(-1deg);
+    }
+    .snack-secundario-imagen {
+        width: 45%;
+        height: 90px;
+        bottom: -5px;
+        right: -5px;
+    }
+}
