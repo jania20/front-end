@@ -1,0 +1,180 @@
+/* ========================================================== */
+/* Archivo: src/components/SobreNosotros.css                  */
+/* Contiene estilos específicos de la sección Sobre Nosotros. */
+/* ========================================================== */
+
+.seccion-sobre-nosotros {
+    background-color: #F2F2F2; 
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.seccion-sobre-nosotros h2 {
+    font-size: 4.2em;
+    color: #FFD700;
+    margin-bottom: 60px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 1px;
+    border-bottom: 4px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 5px; 
+}
+
+.contenedor-contenido-sobre-nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: left; 
+}
+
+.texto-historia {
+    flex: 1;
+    min-width: 400px;
+    max-width: 650px;
+    text-align: justify;
+    margin-top: -70px; 
+}
+
+.texto-historia h3 {
+    font-size: 2em;
+    color: #001F3F;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.texto-historia p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.imagen-sobre-nosotros {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-sobre-nosotros img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/*Media queries*/
+@media (max-width: 1200px) {
+    .contenedor-contenido-sobre-nosotros {
+        max-width: 1000px; 
+        gap: 40px;
+        margin-top: 50px;
+    }
+    .imagen-sobre-nosotros {
+        width: 320px;
+        height: 350px;
+    }
+    .texto-historia {
+        max-width: 600px;
+        margin-top: -60px;
+        text-align: justify;
+    }
+    .texto-historia h3 {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 992px) {
+    .seccion-sobre-nosotros h2 {
+        font-size: 3.5em;
+        margin-bottom: 25px; 
+    }
+    .contenedor-contenido-sobre-nosotros {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+        max-width: 700px;
+    }
+    .texto-historia {
+        text-align: center;
+        max-width: 600px;
+        margin-top: 0;
+    }
+    .texto-historia h3 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .texto-historia p {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+    .imagen-sobre-nosotros {
+        width: 80%;
+        height: 350px;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-sobre-nosotros h2 {
+        font-size: 2.8em;
+        margin-bottom: 20px; 
+        border-bottom: 3px solid #FFD700;
+        padding-bottom: 8px;
+    }
+    .contenedor-contenido-sobre-nosotros {
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .texto-historia p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 12px;
+        text-align: justify;
+    }
+    .imagen-sobre-nosotros {
+        height: 300px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion-sobre-nosotros h2 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #FFD700;
+        padding-bottom: 5px;
+    }
+    .contenedor-contenido-sobre-nosotros {
+        gap: 25px;
+        margin-top: 25px;
+    }
+    .texto-historia p {
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .imagen-sobre-nosotros {
+        height: 250px;
+        max-width: 350px;
+    }
+}

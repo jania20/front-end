@@ -1,0 +1,178 @@
+/* ========================================================== */
+/* Archivo: src/App.css                                       */
+/* Contiene estilos globales, del header y del footer.        */
+/* ========================================================== */
+
+/* Estilos generales del cuerpo y contenedor de la app */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal no deseado */
+    background-color: #F8F8F8; /* Fondo base muy ligero para toda la página, se verá entre secciones si no hay margin-bottom */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: 80px; /* Espacio para el header pegajoso al hacer scroll */
+    color: #333; /* Color de texto principal por defecto */
+}
+
+#root { /* El div principal donde React monta tu app */
+    height: 100%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%; 
+}
+
+
+.content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #FFD700; 
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #001F3F;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #003366;
+}
+
+/* Estilos de la Navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #001F3F;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    outline: none;
+}
+
+nav ul li button:hover {
+    color: #001F3F;
+    opacity: 70%;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+nav ul li button:active {
+   /* color: #001F3F;
+    background-color: #87CEEB;*/
+    transform: translateY(0);
+}
+
+/* Estilos del Main (contenedor de las secciones) */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asegura que 'main' ocupe todo el ancho */
+}
+
+.seccion-pagina {
+    border-radius: 0; 
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0px; 
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #001F3F;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 0.9em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Media Queries para responsividad - App.css (Header/Footer) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        height: auto;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    nav ul li button {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+    .app-container {
+        max-width: 100%; 
+        margin: 0;
+    }
+    .content-wrapper {
+        padding: 0 15px; 
+    }
+    .seccion-pagina {
+        margin-bottom: 0px; 
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px 15px;
+    }
+    .logo {
+        font-size: 1.6em;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    nav ul li button {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+}

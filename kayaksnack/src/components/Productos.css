@@ -1,0 +1,223 @@
+
+/* Estilos para la sección principal de "Productos" */
+.seccion-productos {
+    background-color: #FFFFFF;
+    padding: 80px 40px; 
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Título principal "Nuestros Productos" */
+.titulo-seccion-productos {
+    color: #FFD700;
+    font-size: 4.8em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+    line-height: 1.1;
+}
+
+/* Línea decorativa debajo del título */
+.linea-decorativa-amarilla {
+    border: none;
+    border-top: 5px solid #FFD700;
+    width: 150px;
+    margin: 0 auto 50px auto;
+}
+
+/* Contenedor de la galería de productos (GRID) */
+.galeria-productos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center; 
+    max-width: 1000px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* Estilo de cada tarjeta de producto */
+.tarjeta-producto {
+    background-color: #f9f9f9; 
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de la imagen dentro de la tarjeta de producto */
+.imagen-producto {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+/* ESTILOS ESPECÍFICOS PARA EL POSICIONAMIENTO DE IMÁGENES DENTRO DE LA TARJETA */
+.elote-imagen { object-position: top 15%; }
+.tosticeviche-imagen { object-position: bottom 15%; }
+.tostielote-imagen { object-position: center; }
+.boyas-imagen { object-position: center; }
+.tostada-imagen { object-position: center; }
+.litroceviche-imagen { object-position: top 30%; }
+.chilidog-imagen { object-position: top 40%; }
+
+/* Nombre del producto en la tarjeta */
+.nombre-producto {
+    font-size: 1.0rem;
+    color: #333;
+    margin: 10px 0 15px 0;
+    padding: 0 15px;
+    font-weight: 600;
+}
+
+/* Contenedor del botón "Ver más/menos" */
+.contenedor-boton-productos {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Estilo del botón "Ver más/menos" */
+.boton-explorar-productos {
+    display: inline-block;
+    padding: 16px 35px;
+    background-color: #001F3F !important;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.15em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #001F3F !important;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton-explorar-productos:hover {
+    background-color: #003366 !important;
+    border-color: #003366 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.boton-explorar-productos:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Media queries*/
+
+@media (max-width: 1200px) {
+    .seccion-productos {
+        padding: 70px 30px;
+    }
+    .galeria-productos {
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 900px;
+    }
+    .imagen-producto {
+        height: 220px;
+    }
+    .nombre-producto {
+        font-size: 0.95rem;
+    }
+    .boton-explorar-productos {
+        padding: 14px 30px;
+        font-size: 1.05em;
+    }
+}
+
+@media (max-width: 992px) {
+    .seccion-productos {
+        padding: 60px 25px;
+    }
+    .titulo-seccion-productos {
+        font-size: 3.5em;
+    }
+    .linea-decorativa-amarilla {
+        width: 100px;
+        margin-bottom: 30px;
+    }
+    .galeria-productos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 800px;
+    }
+    .imagen-producto {
+        height: 200px;
+    }
+    .nombre-producto {
+        font-size: 0.85rem;
+    }
+    .boton-explorar-productos {
+        padding: 12px 25px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-productos {
+        padding: 50px 20px;
+    }
+    .titulo-seccion-productos {
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+    .linea-decorativa-amarilla {
+        width: 80px;
+        margin-bottom: 25px;
+    }
+    .galeria-productos {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
+    }
+    .imagen-producto {
+        height: 180px;
+    }
+    .nombre-producto {
+        font-size: 0.8rem;
+    }
+    .boton-explorar-productos {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion-productos {
+        padding: 40px 15px;
+    }
+    .titulo-seccion-productos {
+        font-size: 2.5em;
+    }
+    .linea-decorativa-amarilla {
+        width: 70px;
+        margin-bottom: 20px;
+    }
+    .imagen-producto {
+        height: 150px;
+    }
+    .nombre-producto {
+        font-size: 0.7rem;
+    }
+    .boton-explorar-productos {
+        width: 90%;
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+}

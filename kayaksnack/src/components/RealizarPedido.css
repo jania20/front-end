@@ -1,0 +1,353 @@
+/* src/components/RealizarPedido.css */
+
+.seccion-realizar-pedido {
+    background-color:  #FFFFFF; 
+    color: #333333;
+    padding: 40px 20px; 
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo-principal {
+    text-align: center;
+    color: #000000;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    text-shadow: none;
+}
+
+.linea-debajo-titulo {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #FFD700, transparent); 
+    margin: 20px auto 30px auto;
+    width: 60%;
+}
+
+.subtitulo-principal {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.formulario-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.campo-grupo {
+    margin-bottom: 15px;
+}
+
+.etiqueta-campo {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #333333;
+    font-weight: bold;
+}
+
+.required-asterisk {
+    color: #FFD700;
+    margin-left: 4px;
+}
+
+.input-text,
+.input-select {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Fondo de input claro */
+    color: #333333;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.input-text:focus,
+.input-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+textarea.input-text {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.input-error {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.3);
+}
+
+.mensaje-error {
+    color: #dc3545;
+    font-size: 0.9em;
+    margin-top: 5px;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* --- ESTILOS PARA LA SECCIÓN DE AÑADIR INGREDIENTES --- */
+.campo-grupo .ingrediente-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.campo-grupo .ingrediente-input-container .input-text {
+    flex-grow: 1;
+    width: auto;
+}
+
+.boton-anadir-ingrediente {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.boton-anadir-ingrediente:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.boton-anadir-ingrediente:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+
+.ingredientes-agregados {
+    background-color: #f0f0f0; /* Fondo claro para agregados */
+    border: 1px solid #cccccc; /* Borde más claro */
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ingredientes-agregados .titulo-agregados {
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.lista-agregados {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.lista-agregados li {
+    background-color: #e0e0e0;
+    color: #333333;
+    padding: 8px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    gap: 8px;
+}
+
+.boton-eliminar-ingrediente {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0 4px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.boton-eliminar-ingrediente:hover {
+    color: #c82333;
+    transform: scale(1.1);
+}
+
+.boton-completar-pedido {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.boton-completar-pedido:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.boton-completar-pedido:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.info-telefono {
+    text-align: center;
+    color: #555555;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.info-telefono strong {
+    color: #000000;
+}
+
+
+/*ESTILOS PARA CAMPOS DE PAGO*/
+
+.payment-fields-container {
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.payment-fields-container h3 {
+    font-size: 1.3em;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.campo-row {
+    display: flex;
+    gap: 15px;
+}
+
+.campo-col {
+    flex: 1;
+}
+
+/* Estilo para el botón de procesar pago */
+.boton-procesar-pago {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.boton-procesar-pago:hover:not(:disabled) {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.boton-procesar-pago:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Mensaje de pago completado */
+.mensaje-pago-completado {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mensaje-pago-completado strong {
+    color: #28a745;
+}
+
+/* Media Query para responsividad general */
+@media (max-width: 768px) {
+    .seccion-realizar-pedido {
+        margin: 20px 10px;
+        padding: 25px 15px;
+    }
+
+    .titulo-principal {
+        font-size: 2.2em;
+    }
+
+    .subtitulo-principal {
+        font-size: 1em;
+    }
+
+    .boton-completar-pedido {
+        font-size: 1.1em;
+        padding: 12px 20px;
+    }
+}
+
+/* Media Query específico para campos en fila en móviles */
+@media (max-width: 600px) {
+    .campo-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campo-grupo .ingrediente-input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .boton-anadir-ingrediente {
+        width: 100%;
+    }
+}

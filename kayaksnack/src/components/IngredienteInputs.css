@@ -1,0 +1,79 @@
+.ingrediente-inputs-container {
+    /* Hereda estilos de .campo-grupo en RealizarPedido.css */
+    /*Es un wrapper */
+}
+
+/* Wrapper para el input y la lista de sugerencias */
+.autocomplete-wrapper {
+    position: relative; 
+    flex-grow: 1; 
+}
+
+/* Estilo delcomponente IngredienteInputs */
+.autocomplete-wrapper .input-text {
+    width: 100%;
+    padding-right: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7%2010L12%2015L17%2010H7Z%22%20fill%3D%22%23777%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px center; 
+    background-size: 20px; 
+}
+
+/* Lista de sugerencias (el menú dropdown) */
+.suggestions-list {
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #333; 
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    list-style: none; 
+    padding: 8px 0; 
+    margin: 0; 
+    max-height: 200px; 
+    overflow-y: auto; 
+    animation: fadeIn 0.2s ease-out;
+    -webkit-overflow-scrolling: touch; 
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ítem individual de la sugerencia */
+.suggestion-item {
+    padding: 12px 20px; 
+    color: #F8F8F8; 
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease; 
+    text-align: left; 
+}
+
+.suggestion-item:hover {
+    background-color: #555; 
+    color: #FFD700; 
+}
+
+/* Media queries*/
+@media (max-width: 768px) {
+    .autocomplete-wrapper .input-text {
+        padding-right: 35px;
+        background-position: right 10px center;
+        background-size: 18px;
+    }
+    .suggestions-list {
+        padding: 6px 0;
+    }
+    .suggestion-item {
+        padding: 10px 15px;
+        font-size: 0.95em;
+    }
+}

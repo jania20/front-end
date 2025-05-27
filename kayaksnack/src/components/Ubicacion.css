@@ -1,0 +1,349 @@
+.seccion-ubicacion {
+    background-color: #F2F2F2;
+    padding: 50px 30px; 
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Título principal "Ubicación" */
+.titulo-seccion-ubicacion {
+    font-family: 'Georgia', serif;
+    font-size: 3.8em;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Línea decorativa debajo del título */
+.linea-decorativa-gris {
+    border: none;
+    border-top: 3px solid #FFD700;
+    width: 100px;
+    margin: 0 auto 40px auto;
+}
+
+/* Contenedor principal de las columnas de información y mapa */
+.contenido-ubicacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Estilo base para las cajas internas (información y mapa/servicios) */
+.info-contacto-horarios,
+.caja-mapa,
+.caja-opciones-servicio {
+    background-color: #FFFFFF; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07); 
+    padding: 25px;
+    color: #333;
+}
+
+/* Columna de información de contacto y horarios */
+.info-contacto-horarios {
+    flex: 1;
+    min-width: 320px;
+    max-width: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Subtítulos dentro de la columna de información (¿Dónde estamos, Horarios, Contacto) */
+.info-contacto-horarios h2 {
+    color: #001F3F;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Párrafos de texto dentro de la columna de información */
+.info-contacto-horarios p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de cada bloque de información (dirección, horarios, contacto) */
+.bloque-info {
+    margin-bottom: 20px;
+}
+
+.bloque-info:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo para el texto con icono */
+.icono-texto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Placeholder para los iconos (emojis o íconos de librería) */
+.icon-placeholder {
+    font-size: 1.6rem;
+    margin-right: 10px;
+    color: #FFD700;
+    line-height: 1;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* Columna derecha: Mapa y opciones de servicio */
+.mapa-servicios {
+    flex: 2;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Caja que contiene el mapa */
+.caja-mapa {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #AAA;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Caja de opciones de servicio */
+.caja-opciones-servicio {
+    text-align: left;
+    flex-grow: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Subtítulo de "Opciones de servicio" */
+.caja-opciones-servicio h2 {
+    color: #001F3F;
+    font-size: 1.55rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Lista de opciones de servicio */
+.caja-opciones-servicio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.caja-opciones-servicio ul li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.95rem;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Bullet decorativo para la lista de servicios */
+.caja-opciones-servicio ul li::before {
+    content: '•';
+    color: #FFD700;
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    line-height: 1;
+}
+
+/* ----------------------------------------------------------- */
+/* Media Queries para Responsividad - Ubicacion.css          */
+/* ----------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+    .seccion-ubicacion {
+        padding: 45px 25px;
+        min-height: 500px;
+    }
+    .titulo-seccion-ubicacion {
+        font-size: 3.5em;
+    }
+    .linea-decorativa-gris {
+        width: 90px;
+        margin-bottom: 35px;
+    }
+    .contenido-ubicacion {
+        gap: 25px;
+        max-width: 1000px;
+    }
+    .info-contacto-horarios {
+        min-width: 300px;
+        max-width: 400px;
+    }
+    .mapa-servicios {
+        min-width: 350px;
+    }
+    .caja-mapa {
+        height: 300px;
+        font-size: 1.1rem;
+    }
+    .info-contacto-horarios h2,
+    .caja-opciones-servicio h2 {
+        font-size: 1.5rem;
+    }
+    .info-contacto-horarios p,
+    .caja-opciones-servicio ul li {
+        font-size: 0.9rem;
+    }
+    .icon-placeholder {
+        font-size: 1.5rem;
+    }
+    .caja-opciones-servicio ul li::before {
+        font-size: 1.8rem;
+        top: -4px;
+    }
+}
+
+@media (max-width: 992px) {
+    .seccion-ubicacion {
+        padding: 35px 20px;
+        min-height: 480px;
+    }
+    .titulo-seccion-ubicacion {
+        font-size: 3em;
+    }
+    .linea-decorativa-gris {
+        width: 80px;
+        margin-bottom: 30px;
+    }
+    .contenido-ubicacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        max-width: 500px;
+    }
+    .info-contacto-horarios,
+    .mapa-servicios,
+    .caja-mapa,
+    .caja-opciones-servicio {
+        min-width: unset;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .caja-mapa {
+        height: 280px;
+        font-size: 1.05rem;
+    }
+    .info-contacto-horarios h2,
+    .caja-opciones-servicio h2 {
+        font-size: 1.4rem;
+    }
+    .info-contacto-horarios p,
+    .caja-opciones-servicio ul li {
+        font-size: 0.85rem;
+    }
+    .icon-placeholder {
+        font-size: 1.4rem;
+    }
+    .caja-opciones-servicio ul li::before {
+        font-size: 1.6rem;
+        top: -3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-ubicacion {
+        padding: 30px 15px;
+        min-height: 400px;
+    }
+    .titulo-seccion-ubicacion {
+        font-size: 2.5em;
+        margin-bottom: 12px;
+    }
+    .linea-decorativa-gris {
+        width: 70px;
+        margin-bottom: 20px;
+    }
+    .caja-mapa {
+        height: 240px;
+        font-size: 0.95rem;
+    }
+    .info-contacto-horarios h2,
+    .caja-opciones-servicio h2 {
+        font-size: 1.3rem;
+    }
+    .info-contacto-horarios p,
+    .caja-opciones-servicio ul li {
+        font-size: 0.8rem;
+    }
+    .icon-placeholder {
+        font-size: 1.3rem;
+    }
+    .caja-opciones-servicio ul li::before {
+        font-size: 1.5rem;
+        top: -2px;
+    }
+    .info-contacto-horarios,
+    .mapa-servicios,
+    .caja-mapa,
+    .caja-opciones-servicio {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion-ubicacion {
+        padding: 20px 10px;
+        min-height: 350px;
+    }
+    .titulo-seccion-ubicacion {
+        font-size: 2em;
+    }
+    .linea-decorativa-gris {
+        width: 60px;
+        margin-bottom: 15px;
+    }
+    .caja-mapa {
+        height: 180px;
+        font-size: 0.85rem;
+    }
+    .info-contacto-horarios h2,
+    .caja-opciones-servicio h2 {
+        font-size: 1.2rem;
+    }
+    .info-contacto-horarios p,
+    .caja-opciones-servicio ul li {
+        font-size: 0.75rem;
+    }
+    .icon-placeholder {
+        font-size: 1.2rem;
+    }
+    .caja-opciones-servicio ul li::before {
+        font-size: 1.4rem;
+        top: -1px;
+    }
+}
