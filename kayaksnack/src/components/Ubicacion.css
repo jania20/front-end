@@ -1,7 +1,7 @@
 .seccion-ubicacion {
     background-color: #F2F2F2;
-    padding: 50px 30px; 
-    width: 100%; 
+    padding: 50px 30px;
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
     color: #333;
@@ -40,17 +40,17 @@
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Estilo base para las cajas internas (información y mapa/servicios) */
 .info-contacto-horarios,
 .caja-mapa,
 .caja-opciones-servicio {
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
     padding: 25px;
     color: #333;
 }
@@ -180,7 +180,7 @@
 }
 
 /* ----------------------------------------------------------- */
-/* Media Queries para Responsividad - Ubicacion.css          */
+/* Media Queries para Responsividad - Ubicacion.css            */
 /* ----------------------------------------------------------- */
 
 @media (max-width: 1200px) {

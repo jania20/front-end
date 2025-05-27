@@ -1,26 +1,29 @@
+
+
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(255, 255, 255, 0.8); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .modal-content {
-    background-color: #333; 
-    color: #fff; 
+    background-color: #FFFFFF; 
+    color: #333; 
     padding: 30px;
+    border: black solid 2px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
     text-align: center;
     max-width: 400px;
     width: 90%;
-    animation: fadeIn 0.3s ease-out; 
+    animation: fadeIn 0.3s ease-out;
 }
 
 .modal-content h2 {
@@ -33,30 +36,33 @@
     font-size: 1.1em;
     margin-bottom: 20px;
     line-height: 1.5;
+    color: #555; 
 }
 
 .modal-time-estimate {
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 25px;
-    color: #B3E5FC; 
+    color: #007bff; 
+    font-weight: bold; 
 }
 
 .modal-payment-status {
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 25px;
-    color: #A5D6A7; 
+    color: #28a745; 
+    font-weight: bold; 
 }
 
 .payment-success {
     font-weight: bold;
-    color: #4CAF50; 
+    color: #28a745; 
 }
 
 .modal-close-button {
     background-color: #FFD700; 
-    color: #333;
+    color: #333; 
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
@@ -64,10 +70,11 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
+    outline: none; 
 }
 
 .modal-close-button:hover {
-    background-color: #e0b800;
+    background-color: #e6c200;
     transform: translateY(-2px);
 }
 
@@ -97,5 +104,9 @@
     .modal-close-button {
         padding: 10px 20px;
         font-size: 1em;
+    }
+    .modal-time-estimate,
+    .modal-payment-status {
+        font-size: 1.1em;
     }
 }
