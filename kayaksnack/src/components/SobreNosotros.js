@@ -11,16 +11,22 @@ function SobreNosotros() {
       <div className="contenedor-contenido-sobre-nosotros">
         {/* Contenedor de la imagen */}
         <div className="imagen-sobre-nosotros">
-          <img src="./images/foto.jpeg" alt="Imagen de Kayak Snack" />
-          
+          {/* Asegúrate de que la ruta de la imagen sea correcta */}
+          <img src="./images/foto.jpeg" alt="Imagen de Kayak Snack" /> 
         </div>
 
         {/* Contenedor del texto de la historia */}
         <div className="texto-historia">
           <h3>Nuestra Historia</h3>
-          <p>Kayak Snack nació de la pasión por crear experiencias culinarias únicas, frescas y llenas de sabor. Ubicados en un entorno natural vibrante, nos esforzamos por ser el oasis perfecto donde la buena comida y la tranquilidad se encuentran.</p>
-          <p>Cada snack es preparado con ingredientes de la más alta calidad, pensando en tu disfrute y bienestar.</p>
-          <p>Desde los clásicos elotes en vaso hasta nuestras innovadoras micheladas y frutas frescas, en Kayak Snack encontrarás el compañero ideal para tus aventuras o simplemente para ese momento de antojo.</p>
+          <p>
+            Kayak Snack nació del corazón y los recuerdos. El nombre tiene una historia especial: años atrás, dos hermanos compartían la pasión por el canotaje (específicamente el kayak), un deporte acuático que practicaban en la Presa.
+          </p>
+          <p>
+            No solo los conectó con el agua y la naturaleza, sino también entre ellos. De ahí nace el nombre: Kayak Snack, como símbolo de aventura, frescura y unión.
+          </p>
+          <p>
+            El negocio comenzó frente a su casa, un lugar rodeado de árboles, vegetación y en un entorno tranquilo y natural. Ideal para disfrutar de antojitos como tostielotes, tostilocos, fruta fresca, entre otros.
+          </p>
         </div>
       </div>
     </section>
