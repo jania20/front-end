@@ -1,6 +1,5 @@
-// src/components/Inicio.js
 import React from 'react';
-import './Inicio.css'; // Estilos específicos de la página de inicio
+import './Inicio.css'; 
 
 function Inicio() {
 

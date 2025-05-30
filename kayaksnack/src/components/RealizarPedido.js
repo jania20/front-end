@@ -9,7 +9,7 @@ function RealizarPedido() {
         '': [],
         'Fruta Fresca': ['Chamoy', 'Tajín', 'Miguelito', 'Leche Condensada', 'Sal', 'Limón', 'Miel'],
         'Elote en vaso': ['Queso Cotija', 'Mayonesa', 'Chili en polvo', 'Crema', 'Mantequilla', 'Limón', 'Sal'],
-        'Russa': [],
+        'Russa': ["Gomitas"],
         'Tosticeviche': ['Salsa Negra', 'Aguacate', 'Limón'],
         'Tostielote': ['Queso Cotija', 'Mayonesa', 'Chili en polvo', 'Crema', 'Mantequilla'],
         'Boyas': ['Chamoy', 'Tajín', 'Miguelito'],

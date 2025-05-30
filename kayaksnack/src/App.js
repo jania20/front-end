@@ -15,8 +15,8 @@ function App() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({
-        behavior: 'smooth', // Desplazamiento suave
-        block: 'start' // Alinea el inicio de la sección en la parte superior de la vista
+        behavior: 'smooth', 
+        block: 'start' 
       });
     }
   };
@@ -39,10 +39,7 @@ function App() {
 
       {/* MAIN: Aquí se renderizarán todos los componentes secuencialmente */}
       <main>
-        {/*
-          Cada componente ahora está envuelto en un div con un ID para el scroll
-          Y LE AÑADIMOS LA CLASE "seccion-pagina" que maneja la estructura general de la sección
-        */}
+     
         <div id="inicio-seccion" className="seccion-pagina">
           <Inicio />
         </div>
